@@ -21,7 +21,6 @@ public class User {
 
     public User() {
 
-
     }
 
     public User(String name, String lastName, Byte age) {
@@ -30,7 +29,9 @@ public class User {
         this.age = age;
     }
 
-    public Long getId() {return id;}
+    public Long getId() {
+        return id;
+    }
 
     public void setId(Long id) {
         this.id = id;
