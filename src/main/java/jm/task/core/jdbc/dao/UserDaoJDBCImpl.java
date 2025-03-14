@@ -84,6 +84,7 @@ public class UserDaoJDBCImpl implements UserDao {
         return users;
     }
 
+
     @Override
     public void cleanUsersTable() {
         String sql = "DELETE FROM users ";
