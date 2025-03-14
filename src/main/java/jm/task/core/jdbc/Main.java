@@ -2,9 +2,7 @@ package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
-import jm.task.core.jdbc.util.Util;
 
-import static jdk.internal.net.http.common.Utils.close;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +21,6 @@ public class Main {
         userDao.getAllUsers().forEach(System.out::println);
         userDao.cleanUsersTable();
         userDao.dropUsersTable();
-        close();
     }
 }
 
